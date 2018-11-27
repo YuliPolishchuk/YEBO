@@ -1,0 +1,48 @@
+.generation {
+  padding: 120px 0;
+  background-color: $section-color;
+  width: 100%;
+    
+  &__block {
+    margin: auto;
+    font-size: 0.8em;
+    line-height: 2em;
+    font-family: $font-stack;
+    text-align: center;
+    color: $text-color;
+    width: 70%;
+  }
+
+  &__title {
+    color: $h-color;
+    font-size: 1em;
+    margin-bottom:20px;
+    letter-spacing: 0.2em;
+    position: relative;
+  
+    &::before {
+      content: '';
+      width: 52px;
+      height: 43px;
+      background-image: url(../images/generation_icon.png);
+      position: absolute;
+      top: -50px;
+      left: 48%;
+    }
+  }
+}
+@media screen and (max-width:800px) {
+  .generation {
+    padding: 80px 0;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .generation {
+    padding: 70px 0;
+    
+    &__title::before {
+      left: 40%;
+    }
+  }
+}

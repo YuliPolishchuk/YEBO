@@ -1,0 +1,82 @@
+.control-panel {
+  background-color: $dark;
+  width: 100%;
+  padding: 80px 0;
+
+  &__button {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+    a {
+      text-decoration:none;
+      text-transform: uppercase;
+      text-align: center;
+      border: 1px solid $color-green;
+      font-family: $font-stack;
+      color: $color-green;
+      padding: 10px 60px;
+      transition: 1s;
+    
+      &:nth-child(2) {
+        border-color: #fff;
+        color: #fff;
+      }
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+
+      &:nth-child(2):hover {
+        color: $color-green;
+        border-color: $color-green;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .control-panel {
+    padding: 60px 0;
+
+    &__button {
+      width: 80%;
+
+      a {
+        padding: 10px 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:800px) {
+  .control-panel {
+    padding: 60px 0;
+
+    &__button {
+      width: 40%;
+      flex-direction: column;
+
+      a {
+        padding: 10px 40px;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:400px) {
+  .control-panel {
+    padding: 30px 0;
+
+    &__button {
+      width: 70%;
+      flex-direction: column;
+
+      a {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
