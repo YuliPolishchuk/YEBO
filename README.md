@@ -1,2 +1,2 @@
 # YEBO
-[LINK](https://YuliPolishchuk.github.io/YEBO/src/)
+[LINK](https://YuliPolishchuk.github.io/YEBO/build/)
