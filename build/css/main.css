@@ -13,7 +13,7 @@
   height: 100vh;
 }
 
-.header__div {
+.header__menu {
   font-family: "Lato", sans-serif;
   display: flex;
   justify-content: center;
@@ -208,11 +208,11 @@
   left: 45%;
 }
 
-.textblock-two {
+.textblock-vintage {
   background-image: url("../images/workTwo_sm.png");
 }
 
-.textblock-three {
+.textblock-bike {
   background-image: url("../images/workThree_sm.png");
 }
 
@@ -259,11 +259,11 @@
   position: relative;
 }
 
-.textblock__text-two {
+.textblock__text-boriosa {
   background-image: url("../images/work_iconTwo.png");
 }
 
-.textblock__text-three {
+.textblock__text-retro {
   background-image: url("../images/work_iconThree.png");
 }
 
@@ -273,7 +273,7 @@
   color: #353738;
   position: relative;
   font-size: 1.1em;
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .textblock__cont {
@@ -303,31 +303,30 @@
   display: block;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1430px) {
   .textblock::after {
     bottom: 31.5%;
+  }
+  .textblock__text-retro {
+    padding-top: 40px;
   }
 }
 
 @media screen and (min-width: 843px) and (max-width: 1194px) {
-  .textblock::after {
-    bottom: 22%;
-  }
-  .textblock::before {
-    display: none;
-  }
   .textblock__back {
-    padding: 23px 10% 50px;
+    height: inherit;
+    padding: 25px 10% 25px;
   }
   .textblock__back:hover {
+    height: 300px;
+  }
+  .textblock__back:hover .textblock__text {
     height: inherit;
   }
-  .textblock__cont {
+  .textblock__back:hover .textblock__cont {
+    height: 170px;
+    font-size: 0.75em;
     overflow: auto;
-    height: 115px;
-  }
-  .textblock__title {
-    margin: 15px 0 5px;
   }
 }
 
@@ -335,8 +334,14 @@
   .textblock {
     height: 450px;
   }
-  .textblock__h3 {
-    font-size: 0.9em;
+  .textblock__title {
+    font-size: 0.85em;
+  }
+  .textblock__back {
+    padding: 20px 10% 30px;
+  }
+  .textblock__cont {
+    font-size: 0.7em;
   }
   .bicycle__image,
   .bycicles__image {
@@ -438,7 +443,7 @@
   display: flex;
 }
 
-.shop__two {
+.shop__couple {
   display: flex;
 }
 
@@ -470,12 +475,12 @@
   left: 40%;
 }
 
-.shop__one {
+.shop__block {
   position: relative;
   flex-grow: 1;
 }
 
-.shop__one:after {
+.shop__block:after {
   content: "";
   position: absolute;
   top: 0;
@@ -485,13 +490,13 @@
   transition: 1s;
 }
 
-.shop__one:hover::after {
+.shop__block:hover::after {
   background-color: #58a589;
   opacity: 0.7;
   cursor: pointer;
 }
 
-.shop__one:hover > .shop__hover {
+.shop__block:hover > .shop__hover {
   visibility: visible;
   opacity: 1;
 }
