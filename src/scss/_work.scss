@@ -48,11 +48,11 @@
     left: 45%;
   }
   
-  &-two {
+  &-vintage {
     background-image: url("../images/workTwo_sm.png");
   }
 
-  &-three {
+  &-bike {
     background-image: url("../images/workThree_sm.png");
   }
 
@@ -96,10 +96,11 @@
 	  color: $text-color;
     position: relative;
 
-    &-two {
+    &-boriosa {
       background-image: url('../images/work_iconTwo.png');
     }
-    &-three {
+
+    &-retro {
       background-image: url('../images/work_iconThree.png');
     }
   }
@@ -110,7 +111,7 @@
     color: #353738;
     position: relative;
     font-size: 1.1em;
-    margin: 15px 0;
+    margin: 20px 0;
   }
 
   &__cont {
@@ -141,39 +142,39 @@
   }
 }
 
-@media screen and (min-width:1500px){
+@media screen and (min-width:1430px){
   .textblock {
     &::after {
       bottom: 31.5%;
     }   
+    &__text {
+      &-retro {
+        padding-top: 40px;
+      }
+    }
   }
 }
 
 @media screen and (min-width:843px) and (max-width:1194px) {
   .textblock {
-    &::after {
-      bottom: 22%;
-    } 
-
-    &::before {
-      display: none;
-    }
-
     &__back {
-      padding: 23px 10% 50px;
-      &:hover {
-        height: inherit;
-      }
-    }
-    
-    &__cont {
-      overflow: auto;
-      height: 115px;
-    }
+      height: inherit;
+      padding: 25px 10% 25px;
 
-    &__title {
-      margin: 15px 0 5px;
-    }
+      &:hover {
+        height: 300px;
+
+        .textblock__text {
+          height: inherit
+        }  
+
+        .textblock__cont {
+          height: 170px;
+          font-size: 0.75em;
+          overflow: auto;
+        }
+      }
+    } 
   }
 }
 
@@ -181,8 +182,14 @@
   .textblock {
     height: 450px;
 
-    &__h3 {
-      font-size: 0.9em; 
+    &__title {
+      font-size: 0.85em; 
+    }
+    &__back {
+      padding: 20px 10% 30px;
+    }
+    &__cont {
+      font-size: 0.7em;
     }
   }
   
