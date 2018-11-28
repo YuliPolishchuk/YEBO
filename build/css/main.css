@@ -341,7 +341,8 @@
     padding: 20px 10% 30px;
   }
   .textblock__cont {
-    font-size: 0.7em;
+    font-size: 0.75em;
+    height: 190px;
   }
   .bicycle__image,
   .bycicles__image {
