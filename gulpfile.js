@@ -3,7 +3,7 @@ var sass = require("gulp-sass");
 var plumber = require('gulp-plumber');
 var browserSync = require("browser-sync");
 
-gulp.task('sass', function(){
+gulp.task('sass', function() {
   gulp.src('src/scss/main.scss')
   .pipe(plumber())
   .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
@@ -17,7 +17,7 @@ gulp.task("watch", ["sass", "browser"], function() {
 });
 
 
-gulp.task('browser', function(){
+gulp.task('browser', function() {
   browserSync({
     server: { baseDir: 'src'},
     notify: false
