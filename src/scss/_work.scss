@@ -188,8 +188,10 @@
     &__back {
       padding: 20px 10% 30px;
     }
+
     &__cont {
-      font-size: 0.7em;
+      max-height: 195px;
+      font-size: 0.75em;
     }
   }
   
