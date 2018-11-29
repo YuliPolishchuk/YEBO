@@ -313,9 +313,15 @@
 }
 
 @media screen and (min-width: 843px) and (max-width: 1194px) {
+  .textblock:after {
+    bottom: 20%;
+    border: 30px solid transparent;
+    border-top: 30px solid #fff;
+  }
   .textblock__back {
     height: inherit;
     padding: 25px 10% 25px;
+    height: 230px;
   }
   .textblock__back:hover {
     height: 300px;
@@ -324,9 +330,12 @@
     height: inherit;
   }
   .textblock__back:hover .textblock__cont {
-    height: 170px;
-    font-size: 0.75em;
-    overflow: auto;
+    height: 160px;
+    font-size: 0.65em;
+    transition: 0s;
+  }
+  .textblock__text {
+    height: 185px;
   }
 }
 
