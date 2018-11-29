@@ -157,23 +157,33 @@
 
 @media screen and (min-width:843px) and (max-width:1194px) {
   .textblock {
+    &:after {
+      bottom: 20%;
+      border: 30px solid transparent;
+      border-top: 30px solid #fff; 
+    }
+
     &__back {
       height: inherit;
       padding: 25px 10% 25px;
+      height: 230px;
 
       &:hover {
         height: 300px;
 
         .textblock__text {
-          height: inherit
+          height: inherit;
         }  
 
         .textblock__cont {
-          height: 170px;
-          font-size: 0.75em;
-          overflow: auto;
-        }
+          height: 160px;
+          font-size: 0.65em;
+          transition: 0s;
+        } 
       }
+    }
+    &__text {
+      height: 185px;
     } 
   }
 }
