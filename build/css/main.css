@@ -469,21 +469,14 @@
 
 .shop__hover {
   position: absolute;
-  top: 37%;
-  left: 29%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
   transition: visibility 1s, opacity 1s ease-in-out;
-}
-
-.shop__hover-ver {
-  top: 45%;
-}
-
-.shop__hover-hoz {
-  left: 40%;
 }
 
 .shop__block {
