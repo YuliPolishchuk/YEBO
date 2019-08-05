@@ -423,6 +423,7 @@
   margin: 0 auto;
   word-spacing: 0.1em;
   display: block;
+  height: 5vw;
 }
 
 .twitter__controler {
